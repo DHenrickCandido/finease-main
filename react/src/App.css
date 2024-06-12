@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+.App-area-chart {
+  display: flex; /* Utiliza o Flexbox */
+  justify-content: space-between; /* Espaçamento entre os itens */
+}
+
+.App-area-chart > * {
+  flex: 1; /* Cada elemento ocupará igualmente o espaço disponível */
+  margin: 0 10px; /* Espaçamento horizontal entre os gráficos */
+}
+
+.App-area-chart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  max-width: 600px;
+  max-height: 900px;
+  width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.chart-pizza {
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.gasto-table {
+  width: 100%;
+  max-width: 1200px; /* Ajusta conforme necessário */
+  margin-top: 20px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +72,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

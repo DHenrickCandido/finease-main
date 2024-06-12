@@ -4,7 +4,7 @@ import 'chart.js/auto';
 import logo from './logo.svg';
 import './App.css';
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 function RegisterForm() {
   const [email, setEmail] = useState('');
@@ -280,10 +280,23 @@ function App() {
   return (
     <div className="App">
       <header></header>
+      <RegisterForm/>
       <MyForm />
-      <AreaChart />
+
+      <div className="App-area-chart">
+        
+        <div className="chart-pizza">
+          <GastoPieChart/>
+        </div>
+
+        <div className="chart">
+          <AreaChart />
+        </div>
+
+
+      </div>
       <GastoTable/>
-      <GastoPieChart/>
+
     </div>
   );
 }
